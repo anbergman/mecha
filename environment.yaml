@@ -1,4 +1,4 @@
-name: mecha-env
+name: example-environment
 channels:
   - conda-forge
 dependencies:
