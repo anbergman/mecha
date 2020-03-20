@@ -1,0 +1,10 @@
+name: mecha-env
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - pandas
+  - scipy
+  - IPython
+  - ipywidgets
