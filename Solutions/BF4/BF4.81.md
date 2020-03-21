@@ -1,7 +1,7 @@
 # Mekanik II, problem 4.18
 
 A person excerts a force $\mathbf{F}=2 \hat{x} - 4 \hat{y} + 12\hat{z}$ on the gate at point C. Point C lies in the x-y plane and $b=0.6~m$ and $h=1.0~m$. What moment does the person excert about the gate's hinge axis, which is coincindent with the y-axis?
-![Grind](./4_81a.png)
+![Grind](./BF4_81a.png)
 
 and $b=0.6~m$ and $h=1.0~m$
 
@@ -14,7 +14,7 @@ and $b=0.6~m$ and $h=1.0~m$
     </summary>
 Börja med att frilägga grinden.
 
-![Friläggning](./4_81b.png)
+![Friläggning](./BF4_81b.png)
 
 På grinden verkar visserligen tyngdkraft (masscentrum) och kontaktkrafter (vid gångjärnen) men det som söks är bara kraftmomentet från kraften $\mathbf{F}$
 
