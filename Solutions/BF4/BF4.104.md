@@ -26,7 +26,7 @@ $\mathbf{r}_{OC} = \cos 20 \hat{x} + \sin 20 \hat{y}$
 
 
 
-Eftersom den enda kraft som bidrar i problemet är $\mathbf{F}$, vilken verkar med vektorn $\mathbf{r}_{CA}$ kring punkten $C$, blir kraftmomentet $\mathbf{M}_{C}=\mathbf{r}_{CA}\times\mathbf{F}$
+Eftersom den enda kraft som bidrar i problemet är $\mathbf{F}$, vilken verkar med vektorn $\mathbf{r}_C_A$ kring punkten $C$, blir kraftmomentet $\mathbf{M}_{C}=\mathbf{r}_{CA}\times\mathbf{F}$
 
 Eftersom vinkeln $\alpha=0$ enligt uppgiften ligger punkten $A$ i samma plan som rattstången, d.v.s. i xy-planet. Även om det är svårt att se i figuren kan man anta att ratten sitter vinkelrätt mot rattstången. En projektion av systemet i xy-planet ges nedan:
 
