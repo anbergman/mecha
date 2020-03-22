@@ -1,6 +1,6 @@
 # Mekanik II, problem 4.18
 
-A person excerts a force $\mathbf{F}=2 \hat{x} - 4 \hat{y} + 12\hat{z}$ on the gate at point C. Point C lies in the x-y plane and $b=0.6~m$ and $h=1.0~m$. What moment does the person excert about the gate's hinge axis, which is coincindent with the y-axis?
+A person exerts a force $\mathbf{F}=2 \hat{x} - 4 \hat{y} + 12\hat{z}$ on the gate at point C. Point C lies in the x-y plane and $b=0.6~m$ and $h=1.0~m$. What moment does the person exert about the gate's hinge axis, which is coincindent with the y-axis?
 ![Grind](./BF4_81a.png)
 
 and $b=0.6~m$ and $h=1.0~m$
