@@ -18,15 +18,15 @@ Det som söks är momentet $\mathbf{M}_{OC}$ kring rattstången som går i riktn
     <summary>
         <h2>Krafter, moment och vektorer<br></h2>
     </summary>
-För att kunna beräkna $\mathbf{M}_{OC}$ behöver vi först bestämma enhetsvektorn $\mathbf{r}_{OC}$ och kraftmomentet $\mathbf{M}_{OC}$.
+För att kunna beräkna $\mathbf{M}_{OC}$ behöver vi först bestämma enhetsvektorn $\hat{r}_{OC}$ och kraftmomentet $\mathbf{M}_{OC}$.
     
-Enhetsvektorn $\mathbf{r}_{OC}$ ligger i xy-planet och kan med hjälp av trigonometriska samband skrivas som 
+Enhetsvektorn $\hat{r}_{OC}$ ligger i xy-planet och kan med hjälp av trigonometriska samband skrivas som 
 
-$\mathbf{r}_{OC} = \cos 20 \hat{x} + \sin 20 \hat{y}$
+$\hat{r}_{OC} = \cos 20 \hat{x} + \sin 20 \hat{y}$
 
 
 
-Eftersom den enda kraft som bidrar i problemet är $\mathbf{F}$, vilken verkar med vektorn $\mathbf{r}_C_A$ kring punkten $C$, blir kraftmomentet $\mathbf{M}_{C}=\mathbf{r}_{CA}\times\mathbf{F}$
+Eftersom den enda kraft som bidrar i problemet är $\mathbf{F}$, vilken verkar med vektorn $\mathbf{r}_{CA}$ kring punkten $C$, blir kraftmomentet $\mathbf{M}_{C}=\mathbf{r}_{CA}\times\mathbf{F}$
 
 Eftersom vinkeln $\alpha=0$ enligt uppgiften ligger punkten $A$ i samma plan som rattstången, d.v.s. i xy-planet. Även om det är svårt att se i figuren kan man anta att ratten sitter vinkelrätt mot rattstången. En projektion av systemet i xy-planet ges nedan:
 
