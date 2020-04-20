@@ -146,7 +146,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{BF18.35}
+    \title{BF19.31}
     
     
     
@@ -370,225 +370,125 @@
     
 
     
-    \hypertarget{mekanik-ii-problem-18.35}{%
-\subsection{Mekanik II, problem 18.35}\label{mekanik-ii-problem-18.35}}
+    \hypertarget{mekanik-ii-problem-19.31}{%
+\section{Mekanik II, problem 19.31}\label{mekanik-ii-problem-19.31}}
 
-    The stepped disk weighs 1788 N and its moment of inertia is I = 0.27
-kg-m . If the disk is released from rest, how long does it take its
-center to fall 0.91 m? (Assume that the string remains vertical.)
+    The masses of the bar and disk are 14 kg and 9 kg, respectively. The
+system is released from rest with the bar horizontal. Determine the
+angular velocity of the bar when it is vertical if the bar and disk are
+connected by a smooth pin at A.
 
 \begin{figure}
 \centering
-\includegraphics{./BF18_35.png}
-\caption{FallSkiva}
+\includegraphics{./BF19_30.png}
+\caption{Stav}
 \end{figure}
+
+(Similar to 19.30 but with a different connection between the bar and
+the disc.)
 
     \hypertarget{luxf6sning}{%
 \section{Lösning:}\label{luxf6sning}}
 
-    \hypertarget{friluxe4ggning-och-beteckningar}{%
-\subsection{Friläggning och
-beteckningar}\label{friluxe4ggning-och-beteckningar}}
-
-Vi börjar med att frilägga systemet och införa relevanta beteckningar.
-
-\begin{figure}
-\centering
-   \includegraphics[width=6cm]{./BF18_35a.png}
-\caption{FSkiva}
-\end{figure}
-
-De krafter som verkar är här \(\mathbf{T}=T\hat{y}\) och
-\(m\mathbf{g}=-mg\hat{y}\). Skivans inre radie är \(r\) och yttre radien
-är \(R\). Vektorn från masscentrum till där snörkraften angriper är inte
-utritad men kan skrivas som \(\mathbf{r}_T=-r\hat{x}\).
-
     \hypertarget{fysikaliska-samband}{%
 \subsection{Fysikaliska samband}\label{fysikaliska-samband}}
 
-Stången kommer falla nedåt när den släpps. Krafterna verkar bara i y-led
-så det kan inte uppkomma någon acceleration i x-led. Vi kan därför
-betrakta skivans rotation kring masscentrum för att bestämma
-vinkelaccelerationen \(\alpha\) från Euler II och dess acceleration
-\(\mathbf{a}\) från Euler I. Det kinematiska sambandet mellan \(\alpha\)
-och \(\mathbf{a}\) fås via rullvillkoret kring den inre radien \(r\).
+Skivan och stången kommer accelereras nedåt av tyngdkraften. För att
+bestämma stångens vinkelhastigheten \(\omega\) som söks kan man använda
+kraft- och momentanalys tillsammans med Euler I och II.
 
-För att bestämma rörelsen som efterfrågas (falltid) måste vi veta \(a\).
-I problemet är snörkraften \(T\) och vinkelaccelerationen \(\alpha\)
-okänds och behöver lösas ut för att kunna beräkna \(a\).
+Även om det finns en normalkraft i upphängningspunkten \(O\) samt
+interna kontaktkrafter mellan skivan och stången, ser vi att den enda
+kraft som utför ett arbete här är \(m\mathbf{g}\). Därför är ett
+praktiskt tillvägagångssätt här att använda arbete-energisamband i
+stället för Eulers lagar.
 
-    \hypertarget{kraft--och-momentanalys-euler-i-och-ii}{%
-\subsection{Kraft- och momentanalys: Euler I och
-II}\label{kraft--och-momentanalys-euler-i-och-ii}}
+Stångens masscentrum sitter på avståndet \(d_M=l/2\) från
+upphängningsunkten och skivas masscentrum på \(d_m=l\).
 
-\hypertarget{euler-i}{%
-\paragraph{Euler I}\label{euler-i}}
+Skivan sitter fastsatt med en ``smooth pin'' vilket betyder helt
+friktionsfri pinne. Det betyder att inga friktionskrafter mellan stången
+och skivan verkar, utan endast kontaktkrafter i masscentrum för skivan.
+Den enda andra kraft som verkar på skivan är tyngdkraften, vilken också
+verkar i skivans masscentrum. Eftersom alla krafter på skivan verkar
+just i masscentrum betyder det att \emph{inget} kraftmoment påverkar
+skivan med avseende på masscentrum och dess
+vinkelacceleration/vinkelhastighet är därför noll.
 
-Euler I för systemet:
+    \hypertarget{arbete-och-energi}{%
+\subsection{Arbete och energi}\label{arbete-och-energi}}
 
-\(\sum \mathbf{F} = T\hat{y} - mg\hat{y} = m\mathbf{a}=ma\hat{y}\)
-\textbf{(I)}
+Sambandet för arbete och energi kan skrivas som
 
-\hypertarget{euler-ii}{%
-\paragraph{Euler II}\label{euler-ii}}
+\(T_1 + V_1 + U_{12} = T_2 + V_2\) \textbf{(I)}
 
-Euler II för skivan kring masscentrum:
+där \(T\) betyder rörelseenergi, \(V\) potentiell energi och \(U\) det
+arbete av icke-konservativa krafter som utför ett arbete på kroppen. Här
+tittar vi på det sammansatta systemet stång+skiva. Vi behöver dock
+införa de olika kroppornas massor. Här är \(m\) skivans massa och \(M\)
+stångens massa.
 
-\(\mathbf{M} = \mathbf{r}_T \times \mathbf{T} = -r\hat{x} \times T\hat{y} = -rT \hat{z} = I\alpha \hat{z}\)
-\textbf{(II)}
+För läge 1, där systemet startar, har vi
 
-\hypertarget{rullvillkor}{%
-\paragraph{Rullvillkor}\label{rullvillkor}}
+\(T_1=0\) (stång och skiva släpps från vila)
 
-I ekvationerna ovan har vi satt \(a\) positivt i y-led och \(\alpha\)
-positivt i z-led. Det innebär att rullvillkoret här blir \(a=r\alpha\)
-\textbf{(III)}. Det kan motiveras eftersom för en positiv acceleration i
-y-led måste skivan snurra ``upp'' tråden d.v.s rotera moturs, vilket är
-i postiv z-led.
+\(V_1=0\) (Sätter nollnivån för gravitationsenergin här)
+
+och för läge två, när stången (och skivan) roterat med en vinkel
+\(\theta\) får vi då
+
+\(T_2=\frac{Mv_M^2}{2}+\frac{I^M\omega^2}{2}+\frac{mv_m^2}{2}\)
+
+\(V_2=- Mg d_M \sin \theta - mg d_m \sin \theta = - (\frac{M}{2} + m) gl \sin \theta\)
+
+Inget yttre arbete utförs här så \(U_{12}=0\).
+
+Alternativt kan vi skriva stångens rörelseenergi som en ren
+rotationsrörelse kring punkten \(O\), eftersom den roterar kring en fix
+punkt. Då får vi
+
+\(T_2=\frac{I^M_0\omega^2}{2}+\frac{mv_m^2}{2}\)
+
+Tröghetsmomenten för stången fås från lämplig tabell
+\(I_M=\frac{ml^2}{3}\). Eftersom skivan inte roterar kring sitt
+masscentrum behöver vi inte ta med något bidrag till rörelseenergin från
+den rotationen utan för skivan är det bara translationen av masscentrum
+som bidrar.
 
     \hypertarget{beruxe4kning}{%
 \subsection{Beräkning}\label{beruxe4kning}}
 
-\hypertarget{bestuxe4mning-av-a}{%
-\paragraph{Bestämning av a}\label{bestuxe4mning-av-a}}
+Sätter vi in alla energibidrag i \textbf{(I)} vilket ger
 
-Från \textbf{(II)} och \textbf{(III)} kan vi lösa ut \(T\) som
+\(0=\frac{I^M_0\omega^2}{2}+\frac{mv_m^2}{2}- (\frac{M}{2} + m) gl \sin \theta\)
+\textbf{(II)}
 
-\(T=-\frac{I\alpha}{r}=-\frac{Ia}{r^2}\).
-
-Insatt i \textbf{(I)} ger det
-
-\begin{align}
-ma=T-mg&=-\frac{Ia}{r^2}-mg \\
-a(m+\frac{I}{r^2})&=-mg \\
-a&=-\frac{g}{1+\frac{I}{mr^2}}
-\end{align}
-
-så att accelerationen kan skrivas som
-\(\mathbf{a}=-\frac{g}{1+\frac{I}{mr^2}}\hat{y}\).
-
-\hypertarget{integrering-av-ruxf6relseekvationen}{%
-\paragraph{Integrering av
-rörelseekvationen}\label{integrering-av-ruxf6relseekvationen}}
-
-Accelerationen \(a\) från beräkningen ovan är konstant så hastigheten
-kan integreras fram som 
+för att lösa ut den okända hastigheten för skivans masscentrum \(v\)
+från ekvationen ovan använder vi rullvillkoret \(v_m^2=l^2\omega^2\).
+Med rullvillkor och tröghetsmoment insatta i ekvation \textbf{(II)} ovan
+får vi då
 
 \begin{align}
-a&=\frac{dv}{dt} \\
-a dt &= dv \\
--\frac{g}{1+\frac{I}{mr^2}} dt &= dv  \\
--\int_0^t \frac{g}{1+\frac{I}{mr^2}} dt &= \int_0^v dv  = v \\
-v &=  -\frac{gt}{1+\frac{I}{mr^2}}
+0&=\frac{Ml^2}{3}\frac{\omega^2}{2}+\frac{ml^2\omega^2}{2} - (\frac{M}{2} + m) gl \sin \theta \\
+\omega^2&(\frac{Ml^2}{6}+\frac{ml^2}{2}) =(\frac{M}{2} + m) gl \sin \theta \\
+\omega&=\sqrt{\frac{(\frac{M}{2} + m) gl \sin \theta}{\frac{Ml^2}{6}+\frac{ml^2}{2}}}
 \end{align}
-
-På liknande sätt kan sambandet mellan falltiden \(t\) och fallsträckan
-\(s\) fås 
-
-\begin{align}
-v&=\frac{ds}{dt} \\
-v dt &= ds \\
--\frac{gt}{1+\frac{I}{mr^2}} dt &= ds  \\
--\int_0^t \frac{gt}{1+\frac{I}{mr^2}} dt  &= \int_0^s ds  = s \\
-s &= -\frac{1}{2}\frac{gt^2}{1+\frac{I}{mr^2}}  \\
-t &= \sqrt{-\frac{2s}{g}(1+\frac{I}{mr^2})}
-\end{align}
-
-Notera att sträckan \(s\) här kommer vara negativ eftersom trissan
-fallit nedåt, d.v.s. i negativ y-riktning.
 
     \hypertarget{svar}{%
-\subsubsection{Svar}\label{svar}}
+\subsection{Svar}\label{svar}}
 
-Med insatta värden (med \(s=-0.91\)) blir \(t=0.67\) s.
+Med insatta värden för \(\theta=90^\circ\) blir \(\omega=4.38\) rad/s.
 
-    \textbf{Beräkning med insatta värden:}
+\textbf{OBS!} Tänk på att vinkeln alltid måste anges i radianer vid alla
+rotationsrörelser (momentarbete, rullvillkor osv).
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{1}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{from} \PY{n+nn}{ipywidgets} \PY{k}{import} \PY{n}{interact}\PY{p}{,} \PY{n}{interactive}
-\PY{k+kn}{from} \PY{n+nn}{ipywidgets} \PY{k}{import} \PY{n}{FloatSlider}
-\PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
-\PY{k+kn}{from} \PY{n+nn}{IPython}\PY{n+nn}{.}\PY{n+nn}{display} \PY{k}{import} \PY{n}{HTML}
-\end{Verbatim}
-\end{tcolorbox}
+    \hypertarget{kommentar}{%
+\subsection{Kommentar}\label{kommentar}}
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{2}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{HTML}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}\PYZsq{}\PYZsq{}}\PY{l+s+s1}{\PYZlt{}script\PYZgt{}}
-\PY{l+s+s1}{code\PYZus{}show=true; }
-\PY{l+s+s1}{function code\PYZus{}toggle() }\PY{l+s+s1}{\PYZob{}}
-\PY{l+s+s1}{ if (code\PYZus{}show)}\PY{l+s+s1}{\PYZob{}}
-\PY{l+s+s1}{ \PYZdl{}(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{div.input}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{).hide();}
-\PY{l+s+s1}{ \PYZcb{} else }\PY{l+s+s1}{\PYZob{}}
-\PY{l+s+s1}{ \PYZdl{}(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{div.input}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{).show();}
-\PY{l+s+s1}{ \PYZcb{}}
-\PY{l+s+s1}{ code\PYZus{}show = !code\PYZus{}show}
-\PY{l+s+s1}{\PYZcb{} }
-\PY{l+s+s1}{\PYZdl{}( document ).ready(code\PYZus{}toggle);}
-\PY{l+s+s1}{\PYZlt{}/script\PYZgt{}}
-\PY{l+s+s1}{\PYZlt{}form action=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{javascript:code\PYZus{}toggle()}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}\PYZlt{}input type=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{submit}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{ value=}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{Tryck här för att dölja/visa koden.}\PY{l+s+s1}{\PYZdq{}}\PY{l+s+s1}{\PYZgt{}\PYZlt{}/form\PYZgt{}}\PY{l+s+s1}{\PYZsq{}\PYZsq{}\PYZsq{}}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
+Jämfört med uppgift 19.30 blir här vinkelhastigheten för stången högre
+då skivans tröghet inte spelar någon roll. Skillnaden är dock liten
+vilket visar att det största bidraget till systemets rotationströghet i
+uppgift 19.30 kom från de termer som beror på stångens längd. Det är
+rimligt eftersom \(l>>r\).
 
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{2}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-<IPython.core.display.HTML object>
-\end{Verbatim}
-\end{tcolorbox}
-        
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{3}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{c+c1}{\PYZsh{} Set parameters according to exercise description}
-
-\PY{n}{g} \PY{o}{=} \PY{l+m+mf}{9.81}  \PY{c+c1}{\PYZsh{} acceleration due to gravity, in m/s\PYZca{}2}
-\PY{n}{l} \PY{o}{=} \PY{l+m+mf}{0.91}
-\PY{n}{mg}\PY{o}{=}\PY{l+m+mi}{178}
-\PY{n}{r}\PY{o}{=}\PY{l+m+mf}{0.1016}
-\PY{n}{I}\PY{o}{=}\PY{l+m+mf}{0.27}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{6}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k}{def} \PY{n+nf}{e\PYZus{}18\PYZus{}35}\PY{p}{(}\PY{n}{g}\PY{p}{,}\PY{n}{l}\PY{p}{,}\PY{n}{mg}\PY{p}{,}\PY{n}{r}\PY{p}{,}\PY{n}{I}\PY{p}{)}\PY{p}{:}
-
-    \PY{n}{m}\PY{o}{=}\PY{n}{mg}\PY{o}{/}\PY{n}{g}
-    \PY{n}{t}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{l+m+mi}{2}\PY{o}{*}\PY{n}{l}\PY{o}{/}\PY{n}{g}\PY{o}{*}\PY{p}{(}\PY{l+m+mi}{1}\PY{o}{+}\PY{n}{I}\PY{o}{/}\PY{p}{(}\PY{n}{m}\PY{o}{*}\PY{n}{r}\PY{o}{*}\PY{n}{r}\PY{p}{)}\PY{p}{)}\PY{p}{)}
-
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Falltiden t = }\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+si}{\PYZob{}:5.3f\PYZcb{}}\PY{l+s+s1}{\PYZsq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{t}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{s}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-
-    \PY{k}{return} \PY{n}{t}
-\end{Verbatim}
-\end{tcolorbox}
-
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{8}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{s\PYZus{}18\PYZus{}35}\PY{o}{=}\PY{n}{interactive}\PY{p}{(}\PY{n}{e\PYZus{}18\PYZus{}35}\PY{p}{,} 
-              \PY{n}{g}\PY{o}{=}\PY{n}{FloatSlider}\PY{p}{(}\PY{n+nb}{min}\PY{o}{=}\PY{l+m+mf}{9.0}\PY{p}{,}\PY{n+nb}{max}\PY{o}{=}\PY{l+m+mf}{10.0}\PY{p}{,}\PY{n}{value}\PY{o}{=}\PY{l+m+mf}{9.81}\PY{p}{)}\PY{p}{,}
-              \PY{n}{l}\PY{o}{=}\PY{n}{FloatSlider}\PY{p}{(}\PY{n+nb}{min}\PY{o}{=}\PY{l+m+mf}{0.0}\PY{p}{,}\PY{n+nb}{max}\PY{o}{=}\PY{l+m+mi}{3}\PY{p}{,}\PY{n}{value}\PY{o}{=}\PY{l+m+mf}{0.91}\PY{p}{)}\PY{p}{,}
-              \PY{n}{mg}\PY{o}{=}\PY{n}{FloatSlider}\PY{p}{(}\PY{n+nb}{min}\PY{o}{=}\PY{l+m+mf}{0.0}\PY{p}{,}\PY{n+nb}{max}\PY{o}{=}\PY{l+m+mi}{300}\PY{p}{,}\PY{n}{value}\PY{o}{=}\PY{l+m+mi}{178}\PY{p}{)}\PY{p}{,}
-              \PY{n}{r}\PY{o}{=}\PY{n}{FloatSlider}\PY{p}{(}\PY{n+nb}{min}\PY{o}{=}\PY{l+m+mf}{0.0000}\PY{p}{,}\PY{n+nb}{max}\PY{o}{=}\PY{l+m+mf}{0.3000}\PY{p}{,}\PY{n}{value}\PY{o}{=}\PY{l+m+mf}{0.1016}\PY{p}{,}\PY{n}{step}\PY{o}{=}\PY{l+m+mf}{0.0001}\PY{p}{)}\PY{p}{,}
-              \PY{n}{I}\PY{o}{=}\PY{n}{FloatSlider}\PY{p}{(}\PY{n+nb}{min}\PY{o}{=}\PY{l+m+mf}{0.0}\PY{p}{,}\PY{n+nb}{max}\PY{o}{=}\PY{l+m+mi}{1}\PY{p}{,}\PY{n}{value}\PY{o}{=}\PY{l+m+mf}{0.27}\PY{p}{,}\PY{n}{step}\PY{o}{=}\PY{l+m+mf}{0.01}\PY{p}{)}\PY{p}{)}
-\PY{n}{display}\PY{p}{(}\PY{n}{s\PYZus{}18\PYZus{}35}\PY{p}{)}
-\end{Verbatim}
-\end{tcolorbox}
-
-    
-    \begin{verbatim}
-interactive(children=(FloatSlider(value=9.81, description='g', max=10.0, min=9.0), FloatSlider(value=0.91, des…
-    \end{verbatim}
-
-    
-
-    % Add a bibliography block to the postdoc
-    
-    
-    
 \end{document}
